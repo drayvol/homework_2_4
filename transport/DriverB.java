@@ -10,7 +10,8 @@ public class DriverB<T extends Car> extends Driver{
     @Override
     public String refuel() { return "легковушка заправляется"; }
     public String getCarMessage(T car) {
-        return "Водила " + getName() + " управляет машиной " + car.getBrand() + " " + car.getModel() + " и будет участвовать в заезде";
+        return "Водила " + getName() + " управляет машиной " + car.getBrand() + " " + car.getModel() + " и будет участвовать в заезде " + "тип кузвоа " + car.getBodyType().body;
+
     }
 }
 
